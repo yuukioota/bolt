@@ -9,9 +9,7 @@ html{
 }
 
 body{
-  color: #333;
   font-family: "Lato";
-  font-weight: 300;
   font-size: 16px;
 }
 
@@ -25,6 +23,7 @@ h1,h2{
 
 main{
   margin-top:91px;
+  font-weight: 300;
 }
 
 .clear-fix::after{
@@ -39,7 +38,6 @@ main{
 
 .inner{
   margin: 0 auto;
-  text-align: center;
   width: 1100px;
 }
 
@@ -81,10 +79,14 @@ main{
   padding: 14px 12px;
 }
 
+.heading .btn,
+.article-inner .btn{
+  transition: all .3s;
+}
+
 .heading .btn:hover,
 .article-inner .btn:hover{
   color: #333;
-  transition: all .3s;
 }
 
 .container_theme{
@@ -100,7 +102,7 @@ main{
   color: #74cfae;
   font-size: 90px;
   font-weight: 700;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .theme-desc{
@@ -130,9 +132,10 @@ main{
   width: 58%;
 }
 
-.desc-wrapper h1{
+.desc-wrapper h2{
   font-size: 24px;
-  padding: 35px 0;
+  margin-bottom: 35px;
+  padding-top:35px;
 }
 
 .desc-wrapper p{
@@ -150,17 +153,23 @@ main{
 
 .article-inner_top{
   font-size: 24px;
+  margin-bottom: 40px;
 }
 
 .thumbs{
   font-size: 0;
-  padding: 40px 0px 90px 0px;
+  text-align: left;
 }
 
 .thumb{
   cursor: pointer;
+  display: inline-block;
   opacity: 0.7;
-  padding: 0px 0;
+  margin: 0 0 80px 100px;
+}
+
+.thumbs a:nth-child(3n+1){
+  margin-left: 0;
 }
 
 .thumb:hover{
@@ -168,22 +177,12 @@ main{
   transition: all .3s;
 }
 
-.thumb:nth-child(3n+1){
-  margin-right: 100px;
-}
-
-.thumb:nth-child(3n+3){
-  margin-left: 100px;
-}
-
-.thumb:nth-child(-n+3){
-  padding-bottom: 80px;
-}
 
 .article-inner_bottom{
   content: "";
   clear: both;
   display: flex;
+  padding-top: 10px;
 }
 
 .article-desc{
@@ -209,6 +208,7 @@ main{
 
 .section-title{
   font-size: 24px;
+  margin-bottom: 30px;
 }
 
 .skills{
@@ -220,7 +220,6 @@ main{
 
 .skill{
   font-size: 16px;
-  padding-top: 30px;
   width: 25%;
 }
 
@@ -230,11 +229,11 @@ main{
 
 #contact{
   background: #f2f2f2;
-
 }
 
 .social-contents{
   padding: 200px 0;
+  text-align: center;
 }
 
 .social-contents li{
@@ -244,16 +243,16 @@ main{
 
 .social-icon{
   color: #74cfae;
+  cursor: pointer;
   font-size: 50px;
   padding: 30px;
   text-align: center;
   width: 185px;
+  transition: all .3s;
 }
 
 .social-icon:hover{
   background: #FFF;
-  cursor: pointer;
-  transition: all .3s;
 }
 
 .copy-rights{
