@@ -21,9 +21,14 @@ h1,h2{
   font-family: "Raleway"
 }
 
+p,
+.article-desc,
+figcaption{
+  font-weight: lighter;
+}
+
 main{
   margin-top:91px;
-  font-weight: 300;
 }
 
 .clear-fix::after{
