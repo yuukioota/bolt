@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-html{
-  scroll-behavior: smooth;
-}
-
 body{
   font-family: "Lato";
   font-size: 16px;
@@ -21,13 +17,7 @@ h1,h2{
   font-family: "Raleway"
 }
 
-p,
-.article-desc,
-figcaption{
-  font-weight: lighter;
-}
-
-main{
+.main{
   margin-top:91px;
 }
 
@@ -173,18 +163,21 @@ main{
 }
 
 .thumb{
-  cursor: pointer;
   display: inline-block;
-  opacity: 0.7;
   margin: 0 0 80px 100px;
-  transition: all .3s;
 }
 
-.thumb:hover{
+.thumb a{
+  opacity: 0.7;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.thumb a:hover{
   opacity: 1;
 }
 
-.thumbs a:nth-child(3n+1){
+.thumb:nth-child(3n+1){
   margin-left: 0;
 }
 
@@ -237,7 +230,7 @@ main{
   line-height: 28px;
 }
 
-#contact{
+.contact{
   background: #f2f2f2;
 }
 
