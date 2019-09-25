@@ -173,6 +173,7 @@ h1,h2{
   opacity: 0.7;
   transition: all .3s;
   cursor: pointer;
+  display: inline-block;
 }
 
 .thumb a:hover{
@@ -243,7 +244,12 @@ h1,h2{
 }
 
 .social-contents a{
+  color: #74cfae;
+  cursor: pointer;
   display: inline-block;
+  font-size: 50px;
+  padding: 30px;
+  text-align: center;
   transition: all .3s;
   width: 100%;
 }
@@ -265,10 +271,6 @@ h1,h2{
 .social-icon{
   color: #74cfae;
   cursor: pointer;
-  font-size: 50px;
-  padding: 30px;
-  text-align: center;
-  width: 185px;
 }
 
 .copy-rights{
@@ -386,3 +388,5 @@ h1,h2{
   .social-icon{
     width: 100%;
   }
+
+}
